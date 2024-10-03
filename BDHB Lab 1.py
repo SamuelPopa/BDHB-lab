@@ -1,4 +1,27 @@
-#Lab Activity 1: Working with DNA Sequences
+#Lab Activity 1:Accessing Biological Databases
+#Set Up Entrez:
+
+from Bio import Entrez
+Entrez.email = "your.email@example.com"  # Replace with your email
+#Note: NCBI requires an email address for usage tracking.
+
+#Search the Database:
+#Let's search for the BRCA1 gene in Homo sapiens.
+
+handle = Entrez.esearch(db="nucleotide", term="BRCA1[Gene] AND Homo sapiens[Organism]")
+record = Entrez.read(handle)
+id_list = record["IdList"]
+print(f"Found {len(id_list)} records.")
+
+#Fetch a record
+handle = Entrez.efetch(db="nucleotide", id=id_list[0], rettype="gb", retmode="text")
+from Bio import SeqIO
+record = SeqIO.read(handle, "genbank")
+print(f"Sequence ID: {record.id}")
+print(f"Description: {record.description}")
+
+
+#Lab Activity 2: Working with DNA Sequences
 
 #Importing Biopython Modules
 #Open your Python environment and import the necessary modules:
@@ -31,37 +54,10 @@ print("Reverse Complement:", rev_comp_seq)
 from Bio.SeqUtils import GC
 gc_content = GC(dna_seq)
 print("GC Content:", gc_content)
-
-
-#Lab Activity 2: Retrieving and Analyzing Real Genomic Data
-#Accessing NCBI Databases
-
-We'll retrieve the mRNA sequence of the BRCA1 gene.
-#Setting Up Entrez
-from Bio import Entrez
-Entrez.email = "your.email@example.com"  # Replace with your email
-
-#Fetching the Sequence
-handle = Entrez.efetch(db="nucleotide", id="NM_007294.3", rettype="fasta", retmode="text")
-record = handle.read()
-print(record)
-
-#Parsing the Sequence
-from Bio import SeqIO
-from io import StringIO
-seq_record = SeqIO.read(StringIO(record), "fasta")
-print("Sequence ID:", seq_record.id)
-print("Sequence Length:", len(seq_record.seq))
-
-#Analyzing the Sequence
-#Identify Open Reading Frames (ORFs)
-#An ORF is a sequence of DNA that could potentially encode a protein.
-#In Python, you can write a function to find start and stop codons.
-#Calculate Nucleotide Frequencies
-from collections import Counter
-nucleotide_counts = Counter(seq_record.seq)
-print("Nucleotide Counts:", nucleotide_counts)
-#Use matplotlib in Python or ggplot2 in R to create a bar chart of nucleotide frequencies.
+#Finding Motifs
+motif = "ATG"  # Start codon
+positions = [pos for pos in range(len(record.seq)) if record.seq.startswith(motif, pos)]
+print(f"Motif '{motif}' found at positions: {positions}")
 
 #Lab Activity 3: Exploring Genetic Variation
 #Let's investigate known mutations in the BRCA1 gene.
@@ -75,5 +71,16 @@ print(f"Found {len(snp_ids)} SNPs associated with BRCA1.")
     #Fetching SNP Details
 snp_record <- entrez_fetch(db="snp", id=snp_ids[1], rettype="docset", retmode="text")
 cat(snp_record)
+
+
+#Lab activity 4: Working with multiple sequences
+#Download a multi-FASTA file containing mitochondrial sequences from different species.
+#Parse the file and calculate GC content for each sequence.
+#Compare the GC content across species and discuss any patterns observed.
+records = list(SeqIO.parse("mitochondrial_sequences.fasta", "fasta"))
+for record in records:
+    gc_content = GC(record.seq)
+    print(f"{record.id}: GC Content = {gc_content:.2f}%")
+
 
 
