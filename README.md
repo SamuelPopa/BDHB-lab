@@ -1,8 +1,7 @@
-# BDHB-lab
 Python helper scrips for Politehnica University of Timisoara Big Data in Health and Bioinformatics laboratory
 
-Bibliography: 
-Textbooks
+**Bibliography: **
+**Textbooks**
 
 Barabási, A.-L. (2016). Network Science. Cambridge University Press.
 
@@ -22,7 +21,7 @@ Newman, M. E. J. (2010). Networks: An Introduction. Oxford University Press.
 
 Sivia, D. S., & Skilling, J. (2006). Data Analysis: A Bayesian Tutorial (2nd ed.). Oxford University Press.
 
-Articles and Papers
+**Articles and Papers**
 
 Altschul, S. F., Gish, W., Miller, W., Myers, E. W., & Lipman, D. J. (1990). Basic local alignment search tool. Journal of Molecular Biology, 215(3), 403-410.
 
@@ -54,41 +53,41 @@ Vogelstein, B., Papadopoulos, N., Velculescu, V. E., Zhou, S., Diaz, L. A., & Ki
 
 Zhang, B., & Horvath, S. (2005). A general framework for weighted gene co-expression network analysis. Statistical Applications in Genetics and Molecular Biology, 4(1), Article17.
 
-Online Resources
+**Online Resources**
 
-Biopython Documentation
+**Biopython Documentation**
 
 Biopython Tutorial and Cookbook: https://biopython.org/DIST/docs/tutorial/Tutorial.html
 
-Bioconductor Project
+**Bioconductor Project**
 
 https://www.bioconductor.org/
 
-The Cancer Genome Atlas (TCGA)
+**The Cancer Genome Atlas (TCGA)**
 
 https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga
 
-Cytoscape Tutorials
+**Cytoscape Tutorials**
 
 https://cytoscape.org/learn.html
 
-NCBI Education Resources
+**NCBI Education Resources**
 
 https://www.ncbi.nlm.nih.gov/home/learn/
 
-FastQC Software and Documentation
+**FastQC Software and Documentation**
 
 https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-Genomic Data Commons (GDC) API
+**Genomic Data Commons (GDC) API**
 
 https://gdc.cancer.gov/developers/gdc-application-programming-interface-api
 
-NetworkX Documentation
+**NetworkX Documentation**
 
 https://networkx.org/documentation/
 
-Notes:
+**Notes:**
 
 Biopython: A set of freely available tools for biological computation written in Python by an international team of developers. The tutorial and cookbook provide extensive examples on how to use Biopython for bioinformatics tasks.
 
