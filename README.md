@@ -1,6 +1,7 @@
 Python helper scrips for Politehnica University of Timisoara Big Data in Health and Bioinformatics laboratory
 
 **Bibliography: **
+
 **Textbooks**
 
 Barabási, A.-L. (2016). Network Science. Cambridge University Press.
