@@ -27,7 +27,7 @@ Click BLAST to initiate the search.
 Step 3: Analyzing the Results
 
 Once BLAST completes, you’ll see a list of similar sequences from various organisms. BLAST highlights the regions of alignment, showing where your query sequence aligns with the database sequences.
-Discuss with your peers:
+Discussion:
 What does the alignment tell you about the similarity between these sequences?
 How significant are the results (look at the E-values)?
 
@@ -55,14 +55,13 @@ Step 3: Running Clustal Omega
 
 In your terminal, run the following command to perform a multiple sequence alignment:
 
-bash
-
 clustalo -i sequences.fasta -o aligned.fasta --force
+
 This will produce an aligned sequence file named aligned.fasta.
 
 Step 4: Analyzing the Results
 
 Open the aligned file and observe the conserved regions. Clustal Omega marks regions where the sequences are identical.
-Discuss:
+Discussion:
 What regions are conserved across all sequences?
 Why do you think certain regions show variation while others are conserved?
