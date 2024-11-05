@@ -1,13 +1,15 @@
 # Hands-on Exercise: Clustering gene expression data from breast cancer samples
 # Import necessary libraries
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 from scipy.cluster.hierarchy import dendrogram, linkage
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, DBSCAN
 from sklearn.decomposition import PCA
+#optional visualization libraries
+#import numpy as np
+#import seaborn as sns
+
 
 # Load the dataset (direct URL from UCI Repository)
 url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data'
@@ -32,9 +34,6 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
 # Hierarchical Clustering
-from scipy.cluster.hierarchy import dendrogram, linkage
-import matplotlib.pyplot as plt
-
 # Perform hierarchical clustering using 'average' linkage
 Z = linkage(X_scaled, method='average')
 
@@ -46,10 +45,7 @@ plt.xlabel("Sample Index")
 plt.ylabel("Distance")
 plt.show()
 
-
 # K-means Clustering
-from sklearn.cluster import KMeans
-
 # Define the model and fit it to the data
 kmeans = KMeans(n_clusters=2, random_state=0)
 kmeans_labels = kmeans.fit_predict(X_scaled)
@@ -58,8 +54,6 @@ kmeans_labels = kmeans.fit_predict(X_scaled)
 df['KMeans_Cluster'] = kmeans_labels
 
 # Visualization
-from sklearn.decomposition import PCA
-
 # Reduce data to two dimensions with PCA
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X_scaled)
@@ -75,8 +69,6 @@ plt.show()
 
 
 # DBSCAN for Density-Based Clustering
-from sklearn.cluster import DBSCAN
-
 # Define and fit the DBSCAN model
 dbscan = DBSCAN(eps=1.5, min_samples=5)
 dbscan_labels = dbscan.fit_predict(X_scaled)
