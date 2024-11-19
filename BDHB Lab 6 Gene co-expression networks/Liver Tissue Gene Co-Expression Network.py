@@ -4,6 +4,27 @@ import numpy as np
 
 # Load the expression data (after downloading and extracting from GEO)
 # Example file: "liver_expression.csv"
+
+# Load the expression matrix (e.g., GTEx_Expression_Matrix.csv)
+expression_data = pd.read_csv("GTEx_Expression_Matrix.csv", index_col=0)
+# Load the metadata file (e.g., GTEx_Metadata.csv)
+metadata = pd.read_csv("GTEx_Metadata.csv")
+#To isolate liver specific data, load the data into a data frame, and explore the meta data for column like tissue or SMTS. Liver issue might be labeled as liver.
+#Then filder the metadata to isolate liver-specific samples and subset the expression ddata by sample ID. Finally, save the isolated liver data for usa
+print(metadata.head())
+print(metadata.columns)
+# Filter rows for liver tissue
+liver_samples = metadata[metadata['tissue'] == "Liver"]
+# Extract the sample IDs for liver tissue
+liver_sample_ids = liver_samples['SampleID'].tolist()
+# Subset expression data for liver samples
+liver_expression_data = expression_data[liver_sample_ids]
+liver_expression_data.to_csv("Liver_Expression_Data.csv")
+print(f"Liver expression data dimensions: {liver_expression_data.shape}")
+# Extract the sample IDs for liver tissue
+liver_sample_ids = liver_samples['SampleID'].tolist()
+
+# Load the expression data (after downloading and extracting from GEO)
 data = pd.read_csv("liver_expression.csv", index_col=0)
 
 # Display dataset dimensions
