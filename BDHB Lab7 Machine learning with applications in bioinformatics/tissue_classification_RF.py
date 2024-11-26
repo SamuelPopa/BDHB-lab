@@ -57,6 +57,6 @@ plt.xlabel("Feature Importance")
 plt.title("Random Forest Feature Importance")
 plt.show()
 
-#output classification report, confusion matrix and fgeature importance plot
+#output classification report, confusion matrix and feature importance plot
 #Use GridSearchCV to optimize parameters like n_estimators and max_depth
 #Experiment with selecting the top 10 most important features and retraining the model
