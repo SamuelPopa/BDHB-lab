@@ -1,5 +1,8 @@
 # BDHB – Big Data in Health and Bioinformatics Laboratory
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Codespaces-Open-blue?logo=github)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=bozdogalex/BDHB-lab)
+
 ## 📖 Overview
 The **BDHB Laboratory** is a master’s-level course at Politehnica University of Timișoara (Faculty of Automation and Computing).  
 It introduces students to cutting-edge methods in **big data analytics, bioinformatics, and health informatics**, combining classical bioinformatics workflows with modern machine learning, network analysis, and generative AI.
