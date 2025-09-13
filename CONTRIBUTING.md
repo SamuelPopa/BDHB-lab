@@ -1,7 +1,7 @@
-# Contributing Guidelines – BDHB Lab
+``# Contributing Guidelines – BDHB Lab
 
 ## Pair Work
-- Labs are solved in pairs (roles A & B).
+- Labs are solved alone or in pairs (roles A & B).
 - Rotate roles based on lab-level instructions:  
   - **Role A:** driver (typing, coding)  
   - **Role B:** navigator (reviewing, questioning)  
@@ -17,3 +17,4 @@
 - Python: [PEP8](https://peps.python.org/pep-0008/).
 - Notebooks: keep outputs cleared before committing.
 - Reports: PDF, ≤2 pages per assignment.
+``
