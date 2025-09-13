@@ -1,0 +1,9 @@
+jupyter
+numpy
+pandas
+polars
+duckdb
+scikit-learn
+networkx
+matplotlib
+mlflow
