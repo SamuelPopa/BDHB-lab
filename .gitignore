@@ -4,10 +4,12 @@ __pycache__/
 
 # Notebooks
 .ipynb_checkpoints/
+Untitled*.ipynb
 *.ipynb_convert
 *.nbconvert.ipynb
+*.ipynb~
 
-# Data & results (keep samples small in repo; students generate their own)
+# Data & results
 data/
 results/
 outputs/
@@ -17,6 +19,7 @@ mlruns/
 *.feather
 *.csv.gz
 *.tsv.gz
+*.log
 
 # Envs
 .venv/
@@ -27,9 +30,15 @@ mlruns/
 .DS_Store
 .idea/
 .vscode/
+Thumbs.db
+desktop.ini
 
 # Build
 dist/
 build/
 
+# Tests
+.pytest_cache/
+
+# Allow sample data
 !data/sample/
