@@ -36,14 +36,30 @@ It introduces students to cutting-edge methods in **big data analytics, bioinfor
 ### Option A: GitHub Codespaces (recommended)
 Click “Open in Codespaces” → Jupyter and dependencies install automatically.  
 
-### Option B: Local with Docker
+### Option B: Local with Docker on Linux
 ```bash
 docker build -t bdhb:base .
 docker run -it -p 8888:8888 -v $PWD:/work bdhb:base
 ```
-
 ### Option C: Manual local install
 pip install -r requirements.txt
+
+### Running labs without IDE setup
+Edit code in PyCharm/VS Code locally, and use Docker to run everything:
+
+**On Windows PowerShell**:
+```powershell
+.\dev.ps1 jupyter   # open JupyterLab at http://localhost:8890/lab
+.\dev.ps1 smoke     # run smoke test
+.\dev.ps1 lint      # run flake8 lint
+```
+
+**On Git Bash / macOS / Linux**:
+```bash
+make jupyter
+make smoke
+make lint
+```
 
 ## 📂 Resources
 See [RESOURCES.md](RESOURCES.md) for the full list of textbooks, articles, and online tools.  
