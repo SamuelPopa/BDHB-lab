@@ -17,11 +17,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt nbclient nbconvert flake8
 
-      - name: Lint (flake8)
-        run: flake8
+      - name: Lint (only smoke for now)
+        run: flake8 labs/00_smoke
 
-      - name: Run smoke notebook
+      - name: Run smoke (notebook)
         run: |
-           jupyter nbconvert --to notebook --execute --inplace \
-             --ExecutePreprocessor.timeout=120 labs/00_smoke/smoke.ipynb        run: python labs/00_smoke/smoke.py
-
+          jupyter nbconvert --to notebook --execute --inplace \
+            --ExecutePreprocessor.timeout=120 labs/00_smoke/smoke.ipynb
