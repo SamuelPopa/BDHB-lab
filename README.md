@@ -8,18 +8,18 @@
 
 ## Labs (index)
 
-- 01 — Databases & GitHub: `labs/01_intro&databases/`
-- 02 — Sequence Alignment: `labs/02_alignment/`
-- 03 — NGS: `labs/03_formats&NGS/`
-- 04 — Phylogenetics: `labs/04_phylogenetics/`
-- 05 — Clustering: `labs/05_clustering/`
-- 07— WGCNA + Diseasome: `labs/06_wgcna/`
-- 08 — Network Viz & GNN: `labs/07_network_viz/`
-- 09 — Federated Learning: `labs/08_ML_flower/`
-- 10 — Drug Repurposing: `labs/09_repurposing/`
-- 11 — Integrative + Digital Twin: `labs/10_integrative/`
-- 12 — Multi‑omics + Quantum : `labs/11_multiomics/`
-- 13 — Generative AI : `labs/12_genAI/`
+- 01 — Databases & GitHub: [labs/01_intro&databases](labs/01_intro&databases)
+- 02 — Sequence Alignment: [labs/02_alignment](labs/02_alignment)
+- 03 — NGS: [labs/03_formats&NGS](labs/03_formats&NGS)
+- 04 — Phylogenetics: [labs/04_phylogenetics](labs/04_phylogenetics)
+- 05 — Clustering: [labs/05_clustering](labs/05_clustering)
+- 07— WGCNA + Diseasome: [labs/06_wcgna](labs/06_wcgna)
+- 08 — Network Viz & GNN: [labs/07_network_viz](labs/07_network_viz)
+- 09 — Federated Learning: [labs/08_ML_flower](labs/08_ML_flower)
+- 10 — Drug Repurposing: [labs/09_repurposing](labs/09_repurposing)
+- 11 — Integrative + Digital Twin: [labs/10_integrative](labs/10_integrative)
+- 12 — Multi‑omics + Quantum : [labs/11_multiomics](labs/11_multiomics)
+- 13 — Generative AI : [labs/12_genAI](labs/12_genAI)
 - Presentations
 
 ---
