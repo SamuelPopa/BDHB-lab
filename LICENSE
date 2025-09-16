@@ -1,16 +1,4 @@
 
-**Why this structure works:**
-- Clear navigation (students, TAs, reviewers).
-- Governance is *visible but at the bottom* (reviewers look for it, students don’t need it upfront).
-- Splitting into **Overview, Outline, Setup, Resources, Governance, Continuity** shows organization and professionalism.
-
----
-
-# 🔹 Complete MIT License Text
-
-File: `LICENSE`
-
-```text
 MIT License
 
 Copyright (c) 2025 Alexandru-Cristian BOZDOG

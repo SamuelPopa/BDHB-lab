@@ -20,13 +20,13 @@ Pair work is encouraged: contributions may be co-authored.
 ---
 
 ## 📜 License
-- All original code and teaching materials are distributed under the **MIT License** (see [LICENSE](LICENSE)).  
+- All original code and teaching materials are distributed under the **MIT License** (see [LICENSE](../LICENSE)).  
 - Third-party libraries remain under their original licenses (see [LICENSES.md](LICENSES.md)).  
 
 ---
 
 ## 📓 Changelog
-We maintain a [CHANGELOG.md](docs/changelog.md) documenting major updates:  
+We maintain a [CHANGELOG.md](changelog.md) documenting major updates:  
 - >60% of labs are refreshed each academic year.  
 - Major new labs (e.g., **Generative AI, Federated Learning, Graph AI**) are tagged as `new`.  
 
@@ -47,7 +47,7 @@ Students are introduced to:
 - Ethical issues around patient privacy.  
 - Interoperability across platforms using open standards.  
 
-See [docs/GA4GH_primer.md](docs/GA4GH_primer.md) for details.
+See [docs/GA4GH_primer.md](GA4GH_primer.md) for details.
 
 ---
 
