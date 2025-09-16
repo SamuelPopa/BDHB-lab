@@ -7,3 +7,4 @@ scikit-learn
 networkx
 matplotlib
 mlflow
+flake8

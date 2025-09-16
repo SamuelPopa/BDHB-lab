@@ -38,8 +38,8 @@ Click “Open in Codespaces” → Jupyter and dependencies install automaticall
 
 ### Option B: Local with Docker on Linux
 ```bash
-docker build -t bdhb:base .
-docker run -it -p 8888:8888 -v $PWD:/work bdhb:base
+docker build -t ghcr.io/bozdogalex/bdhb:base .
+docker run -it -p 8888:8888 -v $PWD:/work ghcr.io/bozdogalex/bdhb:base
 ```
 ### Option C: Manual local install
 pip install -r requirements.txt
