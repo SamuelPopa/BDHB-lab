@@ -43,8 +43,7 @@
 
 ## Contributing / Policies / Citation
 
-- `CONTRIBUTING.md` (root) — contribution rules & PR tips  
-- `CODE_OF_CONDUCT.md` (optional) — community standards  
-- `CITATION.cff` (root) — how to cite this work  
+- `CONTRIBUTING.md` — contribution rules & PR tips  
+- `CITATION.cff`  — how to cite this work  
 - `docs/changelog.md` — changelog (linked from releases)
 

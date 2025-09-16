@@ -1,7 +1,7 @@
 # 📜 Third-Party Licenses – BDHB Lab
 
 This document lists the third-party packages and tools used in the BDHB Laboratory environment.  
-Each package remains under its original license. The core lab materials are licensed under [MIT License](LICENSE).
+Each package remains under its original license. The core lab materials are licensed under [MIT License](../LICENSE).
 
 ---
 
