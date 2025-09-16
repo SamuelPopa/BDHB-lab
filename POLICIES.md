@@ -26,7 +26,7 @@ Pair work is encouraged: contributions may be co-authored.
 ---
 
 ## 📓 Changelog
-We maintain a [CHANGELOG.md](CHANGELOG.md) documenting major updates:  
+We maintain a [CHANGELOG.md](docs/changelog.md) documenting major updates:  
 - >60% of labs are refreshed each academic year.  
 - Major new labs (e.g., **Generative AI, Federated Learning, Graph AI**) are tagged as `new`.  
 
