@@ -1,26 +1,32 @@
 name: CI
 on:
   push:
+    branches: [ main, env/**, feat/** ]
+    paths:
+      - 'labs/**'
+      - '.github/workflows/ci.yml'
+      - '.flake8'
   pull_request:
+    paths:
+      - 'labs/**'
+      - '.github/workflows/ci.yml'
+      - '.flake8'
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/bozdogalex/bdhb:base
+    permissions:
+      contents: read
+      packages: read
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt nbclient nbconvert flake8
-
-      - name: Lint (only smoke; ignore F401/E401 here)
-        run: flake8 --ignore=F401,E401 labs/00_smoke
-
-      - name: Run smoke (notebook)
-        run: |
-          jupyter nbconvert --to notebook --execute --inplace \
-            --ExecutePreprocessor.timeout=120 labs/00_smoke/smoke.ipynb
+      - name: Lint (only smoke)
+        run: flake8 labs/00_smoke
+      - name: Run smoke
+        run: python labs/00_smoke/smoke.py
