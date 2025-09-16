@@ -8,22 +8,21 @@
 
 ## Labs (index)
 
-- 00 — Smoke: `labs/00_smoke/`
-- 01 — Databases & GitHub: `labs/01_databases/`
+- 01 — Databases & GitHub: `labs/01_intro&databases/`
 - 02 — Sequence Alignment: `labs/02_alignment/`
-- 03 — NGS: `labs/03_ngs/`
+- 03 — NGS: `labs/03_formats&NGS/`
 - 04 — Phylogenetics: `labs/04_phylogenetics/`
 - 05 — Clustering: `labs/05_clustering/`
-- 06a — WGCNA (+ Diseasome): `labs/06a_wgcna/`
-- 06b — Network Viz & GNN: `labs/06b_network_viz/`
-- 07 — Federated Learning: `labs/07_ml_flower/`
-- 08 — Drug Repurposing: `labs/08_repurposing/`
-- 09 — Integrative + Digital Twin: `labs/09_integrative/`
-- 10 — Multi‑omics (+ optional Quantum): `labs/10_multiomics/`
-- 11 — Generative AI (PubMed vs regex; protein embeddings): `labs/11_genai/`
+- 07— WGCNA + Diseasome: `labs/06_wgcna/`
+- 08 — Network Viz & GNN: `labs/07_network_viz/`
+- 09 — Federated Learning: `labs/08_ML_flower/`
+- 10 — Drug Repurposing: `labs/09_repurposing/`
+- 11 — Integrative + Digital Twin: `labs/10_integrative/`
+- 12 — Multi‑omics + Quantum : `labs/11_multiomics/`
+- 13 — Generative AI : `labs/12_genAI/`
+- Presentations
 
 ---
-
 
 > Full onboarding (screenshots, tips): **docs/onboarding.md**
 
@@ -39,6 +38,18 @@
 - `Dockerfile`, `requirements.txt` — env definition
 - `dev.ps1`, `Makefile` — local helpers
 
+---
+# Docs
+
+Supporting material and submission pack live under `docs/`:
+
+- [Onboarding](docs/onboarding.md) — Codespaces & Docker setup, smoke test, troubleshooting
+- [Before/After](docs/before_after.md) — ANIS submission improvement pack
+- [One-pagers](docs/lab_onepagers/) — PDF summaries of labs
+- [Screenshots](docs/screens/) — environment/UI captures (MLflow, Codespaces, Argo)
+- [Changelog](docs/changelog.md) — changes across versions
+- [Policies](docs/policies.md) — third-party license references, repository policies
+- [Resources](docs/resources.md) — recommended readings/tutorials
 ---
 
 ## Contributing / Policies / Citation
