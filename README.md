@@ -13,7 +13,7 @@
 - 03 — NGS: [labs/03_formats&NGS](labs/03_formats&NGS)
 - 04 — Phylogenetics: [labs/04_phylogenetics](labs/04_phylogenetics)
 - 05 — Clustering: [labs/05_clustering](labs/05_clustering)
-- 07— WGCNA + Diseasome: [labs/06_wcgna](labs/06_wcgna)
+- 07— WGCNA + Diseasome: [labs/06_wgcna](labs/06_wgcna)
 - 08 — Network Viz & GNN: [labs/07_network_viz](labs/07_network_viz)
 - 09 — Federated Learning: [labs/08_ML_flower](labs/08_ML_flower)
 - 10 — Drug Repurposing: [labs/09_repurposing](labs/09_repurposing)
@@ -24,7 +24,7 @@
 
 ---
 
-> Full onboarding (screenshots, tips): **docs/onboarding.md**
+> Full onboarding (screenshots, tips): **[Onboarding](docs/onboarding.md)**
 
 ---
 
