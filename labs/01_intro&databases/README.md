@@ -21,8 +21,8 @@ Choose **one** option:
 Expected output: ok.
 
 ### B) Local Docker (Windows PowerShell)
-```docker pull ghcr.io/bozdogalex/bioinf-y4-lab:base
-docker run -it --rm -p 8890:8888 -v "${PWD}:/work" -w /work ghcr.io/bozdogalex/bioinf-y4-lab:base `
+```docker pull ghcr.io/bozdogalex/BDHB-lab:base
+docker run -it --rm -p 8890:8888 -v "${PWD}:/work" -w /work ghcr.io/bozdogalex/BDHB-lab:base `
   bash -lc "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --IdentityProvider.token='' --allow-root"
   ```
 

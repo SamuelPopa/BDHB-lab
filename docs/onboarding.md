@@ -35,7 +35,7 @@ This guide shows two supported ways to run the labs **identically** everywhere:
 
 ### Windows PowerShell
 ```powershell
-docker pull ghcr.io/bozdogalex/bioinf-y4-lab:base
+docker pull ghcr.io/bozdogalex/BDHB-lab:base
 docker run -it --rm -p 8890:8888 -v "${PWD}:/work" -w /work ghcr.io/bozdogalex/bioinf-y4-lab:base `
   bash -lc "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --IdentityProvider.token='' --allow-root"
 ```
@@ -44,7 +44,7 @@ New cell → `print("ok")`
 
 ### macOS / Linux bash
 ```bash
-docker pull ghcr.io/bozdogalex/bioinf-y4-lab:base
+docker pull ghcr.io/bozdogalex/BDHB-lab:base
 docker run -it --rm -p 8888:8888 -v "$PWD:/work" -w /work ghcr.io/bozdogalex/bioinf-y4-lab:base \
   bash -lc "jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --IdentityProvider.token='' --allow-root"
 ```
@@ -53,8 +53,8 @@ Open: **http://localhost:8888/lab**
 ---
 
 # Run MLflow smoke inside the canonical image, from repo root:
-docker run --rm -v ${PWD}:/work -w /work ghcr.io/bozdogalex/bioinf-y4-lab:base `
-  python labs/00_smoke/mlflow_smoke.py --experiment "BIOINF-Y4 Demo"
+docker run --rm -v ${PWD}:/work -w /work ghcr.io/bozdogalex/BDHB-lab:base `
+  python labs/00_smoke/mlflow_smoke.py --experiment "BDHB Demo"
 
 # Start the UI locally:
 mlflow ui --backend-store-uri file://$PWD/mlruns --host 127.0.0.1 --port 5000
