@@ -1,6 +1,6 @@
-# 📜 Third-Party Licenses – BDHB Lab
+# 📜 Third-Party Licenses – BIOINF-Y4 Lab
 
-This document lists the third-party packages and tools used in the BDHB Laboratory environment.  
+This document lists the third-party packages and tools used in the BIOINF-Y4 Laboratory environment.  
 Each package remains under its original license. The core lab materials are licensed under [MIT License](../LICENSE).
 
 ---

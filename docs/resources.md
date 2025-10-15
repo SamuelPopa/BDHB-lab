@@ -1,8 +1,8 @@
-# 📂 Resources – BDHB Lab
+# 📂 Resources – BIOINF-Y4 Lab
 
 ## 📘 Textbooks
-- [*Network Science* – A.-L. Barabási (2016, Cambridge UP)](https://barabasi.com/networksciencebook/) – free online  
-- *Pattern Recognition and Machine Learning* – C. Bishop (2006, Springer)  
+- [*Network Science* – A.-L. Barabási (2016, Cambridge UP)](https://networksciencebook.com/chapter/1) – free online  
+- [*Pattern Recognition and Machine Learning* – C. Bishop (2006, Springer)](https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)  
 - *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* – A. Géron (2019, O’Reilly)  
 - *Introduction to Bioinformatics* – A. Lesk (2019, Oxford UP)  
 - *Networks: An Introduction* – M. Newman (2010, Oxford UP)  
@@ -32,3 +32,13 @@
 - [Cytoscape Tutorials](https://cytoscape.org/learn.html)  
 - [NetworkX Documentation](https://networkx.org/documentation/)  
 - [NCBI Education Resources](https://www.ncbi.nlm.nih.gov/home/learn/)  
+- [FASTQ (Illumina)](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html)
+- [Biopython SeqIO](https://biopython.org/wiki/SeqIO)
+- [Formatul SAM/VCF (htslib)](http://samtools.github.io/hts-specs/)
+- [SRA Run Selector](https://www.ncbi.nlm.nih.gov/Traces/study/) — căutare și filtrare rulari SRA.  
+- [Entrez Programming Utilities (E-utilities)](https://www.ncbi.nlm.nih.gov/books/NBK25501/) — interfață pentru metadate și linkuri.  
+- [NCBI Datasets API](https://www.ncbi.nlm.nih.gov/datasets/docs/v2/) — API modern pentru secvențe și rulari.
+### **ENA (European Nucleotide Archive)**
+- [ENA Browser](https://www.ebi.ac.uk/ena/browser/home) — interfață web pentru genomuri și rulari.  
+- [ENA Portal API (filereport)](https://www.ebi.ac.uk/ena/portal/api/) — acces programatic la linkurile FASTQ.
+- [Biopython Entrez](https://biopython.org/docs/1.75/api/Bio.Entrez.html) — pentru acces la NCBI
